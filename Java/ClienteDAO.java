@@ -1,9 +1,8 @@
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.ArrayList;
+import java.util.ArrayList;
 import java.util.List;
 import java.sql.*;
 
@@ -80,10 +79,10 @@ public class ClienteDAO {
 
 	}
 
-	public List<Cliente> getCliente() {
+	public List<Cliente> getClientes() {
 		String sql = "SELECT * FROM cliente";
 
-		List<Cliente> cliente = new ArrayList<Cliente>();
+		List<Cliente> clientes = new ArrayList<Cliente>();
 
 		Connection conn = null;
 		PreparedStatement pstm = null;
@@ -98,15 +97,16 @@ public class ClienteDAO {
 			rset = pstm.executeQuery();
 			
 			while (rset.next()) {
+				
 				Cliente cliente = new Cliente();
 				
 
-				Cliente.setCpf(rset.getString("cpf"));
-				Cliente.setFone(rset.getInt("telefone"));
-				Cliente.setEmail(rset.getString("email"));
-				Cliente.setNome(rset.getString("nome"));
+				cliente.setCpf(rset.getString("cpf"));
+				cliente.setFone(rset.getInt("telefone"));
+				cliente.setEmail(rset.getString("email"));
+				cliente.setNome(rset.getString("nome"));
 				
-				cliente.add(cliente);
+				clientes.add(cliente);
 			
 			}}catch (Exception e) {
 				e.printStackTrace();
@@ -128,7 +128,7 @@ public class ClienteDAO {
 				}
 			}
 			
-			return cliente;
+			return clientes;
 	}
 
 	public void update(Cliente Cliente) {

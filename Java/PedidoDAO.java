@@ -1,9 +1,9 @@
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.ArrayList;
+import java.util.ArrayList;
 import java.util.List;
+import java.sql.*;
 
 public class PedidoDAO {
 
@@ -117,10 +117,10 @@ public class PedidoDAO {
 		}
 	}
 
-	public List<Pedido> getPedido() {
+	public List<Pedido> getPedidos() {
 		String sql = "SELECT * FROM pedido";
 
-		List<Pedido> cliente = new ArrayList<Pedido>();
+		List<Pedido> pedidos = new ArrayList<Pedido>();
 
 		Connection conn = null;
 		PreparedStatement pstm = null;
@@ -137,11 +137,11 @@ public class PedidoDAO {
 			while (rset.next()) {
 				Pedido pedido = new Pedido();
 				
-				Pedido.setData(rset.getDate("dataPedido"));
-				Pedido.setInfoPedido(rset.getString("info"));
+				pedido.setData(rset.getDate("dataPedido"));
+				pedido.setInfoPedido(rset.getString("info"));
 
 				
-				pedido.add(pedido);
+				pedidos.add(pedido);
 			
 			}}catch (Exception e) {
 				e.printStackTrace();
@@ -163,7 +163,7 @@ public class PedidoDAO {
 				}
 			}
 			
-			return cliente;
+			return pedidos;
 	}
 	
 }

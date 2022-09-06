@@ -1,10 +1,9 @@
-
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.ArrayList;
+import java.util.ArrayList;
 import java.util.List;
+import java.sql.*;
 
 public class ServicoDAO {
 
@@ -122,10 +121,10 @@ public class ServicoDAO {
 		}
 	}
 
-	public List<Servico> getServico() {
+	public List<Servico> getServicos() {
 		String sql = "SELECT * FROM servico";
 
-		List<Servico> servico = new ArrayList<Servico>();
+		List<Servico> servicos = new ArrayList<Servico>();
 
 		Connection conn = null;
 		PreparedStatement pstm = null;
@@ -142,12 +141,12 @@ public class ServicoDAO {
 			while (rset.next()) {
 				Servico servico = new Servico();
 				
-				Servico.setValor(rset.getDouble("cpf"));
-				Servico.setTipoServico(rset.getString("tipoServico"));
-				Servico.setDescricao(rset.getString("descricao"));
+				servico.setValor(rset.getDouble("cpf"));
+				servico.setTipoServico(rset.getString("tipoServico"));
+				servico.setDescricao(rset.getString("descricao"));
 
 				
-				servico.add(servico);
+				servicos.add(servico);
 			
 			}}catch (Exception e) {
 				e.printStackTrace();
@@ -169,7 +168,7 @@ public class ServicoDAO {
 				}
 			}
 			
-			return servico;
+			return servicos;
 	}
 
 
