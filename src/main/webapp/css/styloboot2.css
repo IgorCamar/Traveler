@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
+.bodyx {
   background-image: linear-gradient(0, #fffdf2 0, #fceddf 25%, #efd9c8 50%, #e3c5b2 75%, #d9b5a1 100%);
 }
 
@@ -39,7 +39,7 @@ html {
 
 }
 
- ul.nav a:hover { color: rgba(241, 219, 219, 0.719) !important; }
+ ul.nav a:hover { color: rgba(56, 26, 26, 0.705) !important; }
 
  .carouselestilo {
     text-shadow: black 0.1em 0.1em 0.2em
@@ -85,7 +85,7 @@ html {
     height: 3rem;
     font-size: 1.5rem;
     border-radius: .75rem;
-    background-image: linear-gradient(to right, #00CDAC, #02AAB0);
+    background-image: linear-gradient(0, #ff458c 0, #ff497b 7.14%, #ff4f6a 14.29%, #ff565a 21.43%, #ff5f4a 28.57%, #ff683a 35.71%, #ff7028 42.86%, #ff7912 50%, #f48100 57.14%, #e88900 64.29%, #db9000 71.43%, #ce9700 78.57%, #bf9d00 85.71%, #b0a200 92.86%, #a0a700 100%);
   }
   
   .rounded-4 { border-radius: .5rem; }
@@ -118,7 +118,7 @@ html {
 }
 
 #container-contact {
-  background-image: url(./images/bgcontact.jpg);
+  background-image: url(../images/footer2.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -163,14 +163,22 @@ img {
   box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
 }
 
-#formsviagem {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding: 1rem;
-  background: #02AAB0;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #00CDAC, #02AAB0);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #00CDAC, #02AAB0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border-radius: 25px;
-  font-weight: bolder;
-  color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.prices {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex: 1.5;
+    color: #fc7821;
+    font-weight: bolder;
+}
+
+.prices2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex: 1.5;
+  color: #fc7821;
+  font-weight: lighter;
 }

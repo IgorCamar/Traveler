@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!------ twitter-bootstrap -------------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+        
+        <!------ Font Awesome 5.15.4 ------------>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+        <!------ CSS ---------------------------->
+        <link rel="stylesheet" href="./css/register.css">
+        
+        <!------ jquery ------------------------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        
+        <!------ Bootstrap 5 -------------------->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+        crossorigin="anonymous">
+        
+        <!------ Bootstrap Icons ---------------->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> 
+        
+        <!------ Scripts ------------------------>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <title>Log In | Traveler</title>
+    </head>
+
+<body>
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+  
+  <!-- Container START -->
+  <div class="container p-0">
+    <div class="row justify-content-center align-items-center vh-100 py-5">
+      <!-- Main content START -->
+      <div class="col-sm-10 col-md-8 col-lg-7 col-xl-6 col-xxl-5">
+        <!-- Sign up START -->
+        <div class="card card-body rounded-3 p-4 p-sm-5 mb-4">
+          <div class="text-center">
+            <!-- Title -->
+            <h1 class="mb-2">Registre-se</h1>
+            <span class="d-block">Já possui uma conta? <a href="./login.html">Entre aqui</a></span>
+          </div>
+          <!-- Form START -->
+          <form action="Registrar" method="post" class="mt-4">
+            <!-- Nome -->
+            <label for="nome" class="fs-5">Seu nome:</label>
+            <div class="mb-3 input-group-lg">
+                <input type="text" name="nome" class="form-control" placeholder="Digite seu nome">
+            </div>
+            <!--cpf-->
+            <label for="cpf" class="fs-5">Seu CPF:</label>
+            <div class="mb-3 input-group-lg">
+                <input type="text" name="cpf" class="form-control" placeholder="Digite seu CPF">
+            </div>
+            <!--telefone-->
+            <label for="fone" class="fs-5">Fone:</label>
+            <div class="mb-3 input-group-lg">
+                <input type="number" name="fone" class="form-control" placeholder="Digite seu Telefone">
+            </div>
+            <!-- Email -->
+            <label for="email" class="fs-5 d-flex">E-mail:</label>
+            <div class="mb-3 input-group-lg">
+              <input type="email" name="email" class="form-control" placeholder="Digite seu e-mail">
+            </div>
+            <!-- New password -->
+            <div class="mb-3 position-relative">
+              <!-- Input group -->
+              <label for="senha" class="fs-5">Senha:</label>
+              <div class="input-group input-group-lg">
+                <input class="form-control" type="password" name="senha" id="psw-input" placeholder="Digite sua senha">
+              </div>
+            </div>
+            <!-- Confirm password -->
+            <label for="confirme-senha" class="fs-5">Confirme sua senha:</label>
+            <div class="mb-3 input-group-lg">
+              <input class="form-control" type="password" placeholder="Confirme sua senha">
+            </div>
+            <!-- Keep me signed in -->
+            <div class="mb-3 text-center">
+              <input type="checkbox" class="form-check-input" id="keepsingnedCheck">
+              <label class="form-check-label" for="keepsingnedCheck"> Mantenha-me conectado</label>
+            </div>
+            <!-- Button -->
+            <div class="d-grid text-center"><button type="submit" class="btn btn-lg btn-primary">Registrar</button></div>
+            <!-- Copyright -->
+            <p class="mb-0 mt-3 text-center">©2022 <a target="_blank" href="./home.html">Traveler</a> All rights reserved</p>
+          </form>
+          <!-- Form END -->
+        </div>
+        <!-- Sign up END -->
+      </div>
+    </div> <!-- Row END -->
+  </div>
+  <!-- Container END -->
+
+</main>
+
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+JS libraries, plugins and custom scripts -->
+
+<!-- Bootstrap JS -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Template Functions -->
+<script src="assets/js/functions.js"></script>
+
+
+</body>
+</html>

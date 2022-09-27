@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./css/styloboot2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./images/nossoicon.png">
+    <!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Traveler - A sua agência de viagem. </title>
+</head>
+
+<body>
+
+    <header>
+        <!--navbar--->
+        <div class="altera-fontes">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="./home.html">
+                        <img src="./images/nossoicon.png" alt="" width="30" height="30"
+                            class="d-inline-block align-text-top" style="box-shadow:5px;"> Traveler
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justfy-content-end" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./destinos.html"><i class=" fa fa-fw fa-plane"></i>
+                                    Destinos</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./pacotes.html"><i class=" fa fa-fw fa-box-open"></i>
+                                    Pacotes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./promocoes.html"><i
+                                        class=" fa fa-fw fa-percentage"></i>Promoções</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#container-contact"><i class=" fa fa-fw fa-phone"></i>
+                                    Contato</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav  mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./login.html"><i class=" fa fa-fw fa-user-circle"></i>
+                                    Entrar/Cadastre-se</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--fim do navbar-->
+        <!--header img-->
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/pacoteshead.png" alt="First slide">
+                </div>
+            </div>
+        </div>
+        <!--fim header img-->
+
+        <!--cards destine-->
+        <div class="container mt-5">
+            <h2> Escolha seu pacote: </h2>
+        </div>
+
+
+        <!--cards prices-->
+        <div class="container mt-5">
+            <div class="card-deck mt-4">
+                <div class="card">
+                    <div id="demo0" class="carousel slide carousel-fade" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/greecep1.jpg" alt="Grecia" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/greecep2.jpg" alt="Grecia" class="d-block w-100">
+                            </div>
+                            <a class="carousel-control-prev" href="#demo0" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo0" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Pacote - Grécia Ilhas</h5>
+                        <p class="card-text mb-1"><small><i class="fa fa-calendar"></i> 4 Diárias</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Hospedagem</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Passagem Aérea</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Café da manhã</small></p>
+                        <h5 class="card-text prices"> R$ 5499,00</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="demo4" class="carousel slide carousel-fade" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/southap1.jpg" alt="Africa" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/southap2.jpg" alt="Africa" class="d-block w-100">
+                            </div>
+                            <a class="carousel-control-prev" href="#demo4" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo4" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Pacote - África do Súl</h5>
+                        <p class="card-text mb-1"><small><i class="fa fa-calendar"></i> 5 Diárias</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Hospedagem</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Passagem Aérea</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Café da manhã</small></p>
+                        <h5 class="card-text prices"> R$ 4399,00</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="demo5" class="carousel slide carousel-fade" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/chinap1.jpg" alt="China" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/chinap2.jpg" alt="China" class="d-block w-100">
+                            </div>
+                            <a class="carousel-control-prev" href="#demo5" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo5" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Pacote - China</h5>
+                        <p class="card-text mb-1"><small><i class="fa fa-calendar"></i> 4 Diárias</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Hospedagem</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Passagem Aérea</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Café da manhã</small></p>
+                        <h5 class="card-text prices"> R$ 6199,00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="card-deck mt-4">
+                <div class="card">
+                    <div id="demo6" class="carousel slide carousel-fade" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/ausp1.jpg" alt="Australia" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/ausp2.jpg" alt="Australia" class="d-block w-100">
+                            </div>
+                            <a class="carousel-control-prev" href="#demo6" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo6" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Pacote - Austrália</h5>
+                        <p class="card-text mb-1"><small><i class="fa fa-calendar"></i> 4 Diárias</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Hospedagem</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Passagem Aérea</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Café da manhã</small></p>
+                        <h5 class="card-text prices"> R$ 5999,00</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="demo7" class="carousel slide carousel-fade" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/euapp1.jpg" alt="EUA" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/euapp2.jpg" alt="EUA" class="d-block w-100">
+                            </div>
+                            <a class="carousel-control-prev" href="#demo7" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo7" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Pacote EUA-National Park</h5>
+                        <p class="card-text mb-1"><small><i class="fa fa-calendar"></i> 2 Diárias</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Hospedagem</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Passagem Aérea</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Café da manhã</small></p>
+                        <h5 class="card-text prices"> R$ 2899,00</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="demo8" class="carousel slide carousel-fade" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/newzp1.jpg" alt="New Z" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/parisp.jpg" alt="New Z" class="d-block w-100">
+                            </div>
+                            <a class="carousel-control-prev" href="#demo8" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo8" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Pacote - New Zealand</h5>
+                        <p class="card-text mb-1"><small><i class="fa fa-calendar"></i> 4 Diárias</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Hospedagem</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Passagem Aérea</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Café da manhã</small></p>
+                        <h5 class="card-text prices"> R$ 4199,00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="card-deck mt-4">
+                <div class="card">
+                    <div id="demo9" class="carousel slide carousel-fade" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/bnordp.jpg" alt="Nordeste B" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/bnordp1.jpg" alt="Nordeste B" class="d-block w-100">
+                            </div>
+                            <a class="carousel-control-prev" href="#demo9" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo9" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Pacote - Nordeste Brasil</h5>
+                        <p class="card-text mb-1"><small><i class="fa fa-calendar"></i> 7 Diárias</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Hospedagem</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Passagem Aérea</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Café da manhã</small></p>
+                        <h5 class="card-text prices"> R$ 4999,00</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="demo10" class="carousel slide carousel-fade" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/rjp1.jpg" alt="RJ" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/rjp2.jpg" alt="RJ" class="d-block w-100">
+                            </div>
+                            <a class="carousel-control-prev" href="#demo10" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo10" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Pacote - Rio de Janeiro-Brasil</h5>
+                        <p class="card-text mb-1"><small><i class="fa fa-calendar"></i> 4 Diárias</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Hospedagem</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Passagem Aérea</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Café da manhã</small></p>
+                        <h5 class="card-text prices"> R$ 2599,00</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="demo11" class="carousel slide carousel-fade" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/amazp1.jpg" alt="Amazonas" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/amazp2.jpg" alt="Amazonas" class="d-block w-100">
+                            </div>
+                            <a class="carousel-control-prev" href="#demo11" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo11" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Amazonas - Brasil</h5>
+                        <p class="card-text mb-1"><small><i class="fa fa-calendar"></i> 3 Diárias</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Hospedagem</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Passagem Aérea</small></p>
+                        <p class="card-text mb-0"><small><i class="fa fa-check"></i> Café da manhã</small></p>
+                        <h5 class="card-text prices"> R$ 2099,00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--outro conteudo body cards-->
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">Categorias: </h2>
+
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col"><a class="link-light" href="./destinos.html">
+                        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                            style="background-image: url('./images/dest2.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Destinos</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="./images/nossoicon.png" alt="Travelericon" width="32" height="32"
+                                            class="rounded-circle border border-white">
+                    </a>
+                    </li>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col"><a class="link-light" href="./pacotes.html">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                    style="background-image: url('./images/pacot1.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"> Pacotes</h2>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="./images/nossoicon.png" alt="Travelericon" width="32" height="32"
+                                    class="rounded-circle border border-white">
+            </a>
+            </li>
+            </li>
+            </ul>
+        </div>
+        </div>
+        </div>
+
+        <div class="col"><a class="link-light" href="./promocoes.html">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                    style="background-image: url('./images/dest1.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Promoções</h2>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="./images/nossoicon.png" alt="Travelericon" width="32" height="32"
+                                    class="rounded-circle border border-white">
+            </a>
+            </li>
+            </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+
+
+        <!--Footer-->
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#a2d9ff" fill-opacity="1"
+                d="M0,256L48,266.7C96,277,192,299,288,293.3C384,288,480,256,576,256C672,256,768,288,864,304C960,320,1056,320,1152,309.3C1248,299,1344,277,1392,266.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <!-- Footer -->
+        <footer class=" text-center" style="background-color:#a2d9ff;">
+            <!-- Grid container -->
+            <div class="container p-4">
+
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a href="#!"><i class="bi-facebook fs-3"></i></a>
+
+                    <!-- Twitter -->
+                    <a href="#!"><i class="bi-twitter fs-3"></i></a>
+
+                    <!-- Instagram -->
+                    <a href="#!"><i class="bi-instagram fs-3"></i></a>
+
+
+                </section>
+                <!-- Section: Social media -->
+
+
+                <!-- Section: Form -->
+                <section class="">
+                    <form action="">
+                        <!--Grid row-->
+                        <div class="row d-flex justify-content-center">
+                            <!--Grid column-->
+                            <div class="col-auto">
+                                <p class="pt-2 text-light" style="text-shadow: black 0.1em 0.1em 0.2em;">
+                                    <strong>Assine nossa newsletter e receba ofertas.</strong>
+                                </p>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-5 col-12">
+                                <!-- Email input -->
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="form5Example2" class="form-control" />
+                                    <label class="form-label text-light" for="form5Example2"
+                                        style="text-shadow: black 0.1em 0.1em 0.2em;">Endereço de email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-auto">
+
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-primary mb-4">
+                                    Subscribe
+                                </button>
+                            </div>
+                            <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                    </form>
+                </section>
+                <!-- Section: Form -->
+            </div>
+            <!--contatos-->
+            <div class="container-fluid p-5" id="container-contact">
+                <div class="row justify-content-md-center text-dark">
+                    <div class="col-md-12 mb-4">
+                        <h3>Entre em Contato Conosco.</h3>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p class="lead"><span class="contact-title"><b>Ligue para:</b></span> (85) 11313-1313 </p>
+                        <p class="lead"><span class="contact-title"><b> Horários:</b></span> 8:00 - 20:00</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p class="lead"><span class="contact-title"><b>Envie um e-mail:</b></span>
+                            travelercontact@traveler.br </p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p class="lead"><span class="contact-title"><b>Nosso endereço:</b></span> Rua Dandara dos
+                            Santos. Nº 1506 </p>
+                    </div>
+                    <div class="col-md-6" id="msg-box">
+                        <h4> Ou nos deixe uma Mensagem:</h4>
+                    </div>
+                    <div class="col-md-6" id="contact-form">
+                        <form action="">
+                            <input type="email" class="form-control mb-3" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control mb-3" placeholder="Assunto" name="subject">
+                            <textarea class="form-control" rows="3" placeholder="Sua mensagem..."
+                                name="message"></textarea>
+                            <input type="submit" class="btn btn-dark mt-3" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center text-light p-3"
+                style="background-color: rgba(0, 162, 255, 0.315); text-shadow: black 0.1em 0.1em 0.2em;">
+                © 2022 Copyright: TravelerCorp. Created by Igor Câmara
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

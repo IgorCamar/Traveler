@@ -1,21 +1,27 @@
+package controller;
+
+
 import java.util.Date;
+
+import model.*;
+
 
 public class main {
 
 	public static void main(String[] args) {
 
-//		ClienteDAO ClienteDAO = new ClienteDAO();
+		ClienteDAO ClienteDAO = new ClienteDAO();
 
 		// inserindo dados Cliente--------------------
-//		Cliente Cliente = new Cliente();
+		Cliente Cliente = new Cliente();
 //		//
-//		  Cliente.setNome("null"); 
-//		  Cliente.setCpf("null"); 
-//		  Cliente.setEmail("null");
-//		  Cliente.setFone(0);
-//		 
+		  Cliente.setNome("igor"); 
+		  Cliente.setCpf("854477"); 
+		  Cliente.setEmail("igorcamaras");
+		  Cliente.setFone(89102255);
+	 
 //		
-//		ClienteDAO.save(Cliente);
+		  ClienteDAO.save(Cliente);
 		// atualizando dados
 		// Atualizar
 //				Cliente cl1 = new Cliente();
